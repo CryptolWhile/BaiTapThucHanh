@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giới Thiệu Bản Thân</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#intro">Giới thiệu bản thân</a></li>
+        <li><a href="#contact">Gửi thông tin và giao lưu</a></li>
+      </ul>
+    </nav>
+
+    <main class="container">
+      <section id="intro">
+        <h1>Giới thiệu bản thân</h1>
+        <img
+          src="./ISIC_0000063.jpg"
+          alt="Ảnh đại diện"
+          class="responsive-img"
+        />
+      </section>
+
+      <section id="info">
+        <h2>Thông tin cơ bản</h2>
+        <ul>
+          <li>Họ và Tên: Nguyễn Võ Ngọc Khanh</li>
+          <li>Năm sinh: 2005</li>
+          <li>Chuyên ngành: Hệ thống thông tin</li>
+        </ul>
+      </section>
+
+      <section id="hobbies">
+        <h3>Sở thích</h3>
+        <h4>Món ăn</h4>
+        <ol>
+          <li>Quả na</li>
+          <li>Mì bò rau thơm</li>
+          <li>Bánh đuông dừa</li>
+        </ol>
+        <h4>Giải trí - Trò chơi</h4>
+        <ul>
+          <li>Bắn bi</li>
+          <li>Nhảy dây</li>
+          <li>Đá cầu</li>
+        </ul>
+      </section>
+
+      <section id="music">
+        <h2>Bài nhạc yêu thích</h2>
+        <ul>
+          <li>Đôi mắt - Wanbi Tuấn Anh</li>
+          <li>Bối rối - Đông Nhi</li>
+          <li>Anh lại trễ hẹn nữa rồi - Lương Bích Hữu</li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Mục tiêu của bản thân</h2>
+        <table class="goals-table">
+          <thead>
+            <tr>
+              <th>Mục tiêu</th>
+              <th>Thời hạn</th>
+              <th>Hoàn thành</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Trung bình điểm môn web đạt 8.0</td>
+              <td>12/10/2022</td>
+              <td><input type="checkbox" /></td>
+            </tr>
+            <tr>
+              <td>Đạt chứng chỉ ngoại ngữ đủ chuẩn tốt nghiệp</td>
+              <td>12/10/2023</td>
+              <td><input type="checkbox" /></td>
+            </tr>
+            <tr>
+              <td>Chọn được công ty với vị trí backend developer</td>
+              <td>12/10/2024</td>
+              <td><input type="checkbox" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <form class="contact-form">
+          <h1>Gửi thông tin và giao lưu cùng tôi</h1>
+          <div class="form-group">
+            <label for="name">Họ và tên <span class="required">*</span></label>
+            <input type="text" id="name" class="form-input" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email <span class="required">*</span></label>
+            <input type="email" id="email" class="form-input" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Tin nhắn</label>
+            <textarea id="message" rows="4" class="form-textarea"></textarea>
+          </div>
+          <div class="form-group">
+            <label>Giới tính</label>
+            <div class="radio-group">
+              <label><input type="radio" name="gender" value="male" /> Nam</label>
+              <label><input type="radio" name="gender" value="female" /> Nữ</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Sở thích</label>
+            <div class="checkbox-group">
+              <label><input type="checkbox" name="hobbies" value="football" /> Bóng đá</label>
+              <label><input type="checkbox" name="hobbies" value="music" /> Âm nhạc</label>
+              <label><input type="checkbox" name="hobbies" value="travel" /> Du lịch</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="major">Ngành</label>
+            <select id="major" class="form-select">
+              <option value="is">Hệ thống thông tin</option>
+              <option value="it">Công nghệ thông tin</option>
+              <option value="business">Quản trị kinh doanh</option>
+              <option value="accounting">Kế toán</option>
+              <option value="english">Ngôn ngữ Anh</option>
+              <option value="cs">Khoa học máy tính</option>
+              <option value="security">An toàn thông tin</option>
+              <option value="media">Truyền thông đa phương tiện</option>
+              <option value="software">Phần mềm</option>
+              <option value="other">Khác</option>
+            </select>
+          </div>
+          <button type="submit" class="form-submit">Gửi</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>@2024 12345678 Nguyen Van A</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,273 @@
+/* General reset and typography */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* Container for main content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Heading styles */
+h1, h2, h3, h4 {
+  font-size: 24px;
+  -webkit-text-stroke: 1px black;
+  text-shadow: 1px 1px 1px black;
+  margin-bottom: 15px;
+}
+
+h1 {
+  color: #CAEDFF;
+}
+
+h2 {
+  color: #D8B4F8;
+}
+
+h3, h4 {
+  color: #FFC7EA;
+}
+
+/* Responsive image */
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Section styles */
+#intro, #info, #hobbies, #music, #contact {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+#intro {
+  background-color: #F3FDE8;
+}
+
+#contact {
+  background-image: url('https://www.transparenttextures.com/patterns/subtle-white-feathers.png');
+  background-repeat: repeat;
+  text-align: center;
+}
+
+/* List styles */
+ul, ol {
+  margin: 15px 0;
+  padding-left: 30px;
+}
+
+ul li, ol li {
+  margin-bottom: 10px;
+}
+
+/* Table styles */
+.goals-table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #fff;
+}
+
+.goals-table th, .goals-table td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: left;
+}
+
+.goals-table th {
+  background-color: #D8B4F8;
+  color: white;
+}
+
+/* Form styles */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-input, .form-textarea, .form-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.form-input:focus, .form-textarea:focus, .form-select:focus {
+  border-color: #D8B4F8;
+  outline: none;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.radio-group, .checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.radio-group label, .checkbox-group label {
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+}
+
+.form-submit {
+  background-color: #D8B4F8;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.form-submit:hover {
+  background-color: #CAEDFF;
+  transform: translateY(-2px);
+}
+
+.required {
+  color: red;
+}
+
+/* Navigation styles */
+.main-nav {
+  background-color: #F3FDE8;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+}
+
+.main-nav ul {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+}
+
+.main-nav ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.main-nav ul li a {
+  text-decoration: none;
+  color: #D8B4F8;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.main-nav ul li a:hover {
+  color: #CAEDFF;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #F3FDE8;
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+/* Media query for smaller screens (e.g., mobile) */
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1, h2, h3, h4 {
+    font-size: 18px;
+  }
+
+  .main-nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .main-nav ul li a {
+    font-size: 16px;
+  }
+
+  .contact-form {
+    padding: 15px;
+  }
+
+  .form-input, .form-textarea, .form-select {
+    font-size: 14px;
+  }
+
+  .goals-table {
+    font-size: 14px;
+  }
+
+  .goals-table th, .goals-table td {
+    padding: 5px;
+  }
+
+  #intro, #info, #hobbies, #music, #contact {
+    padding: 10px;
+  }
+}
+
+/* Media query for medium screens (e.g., tablets) */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .container {
+    padding: 15px;
+  }
+
+  h1, h2, h3, h4 {
+    font-size: 20px;
+  }
+
+  .main-nav ul li {
+    margin: 0 15px;
+  }
+
+  .contact-form {
+    max-width: 500px;
+  }
+}
