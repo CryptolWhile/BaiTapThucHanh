@@ -1,4 +1,4 @@
-// ==================== A. VALIDATION FORM ====================
+      // ==================== A. VALIDATION FORM ====================
       document
         .querySelector(".contact-form")
         .addEventListener("submit", function (e) {
